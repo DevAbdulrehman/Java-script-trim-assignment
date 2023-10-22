@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="trim()">Trim</button>
+    <script>
+      function trim() {
+        let sentence = prompt("Write your sentence");
+
+        let trimmed = sentence.trim();
+
+        document.write("The lentgh of the sentence u wrote is &nbsp", sentence.length,"<br>");
+        document.write(
+          "We trimmed your sentence without removing any words and and now the length is &nbsp",
+          trimmed.length
+        );
+      }
+    </script>
+  </body>
+</html>
